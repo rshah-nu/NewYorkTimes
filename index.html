@@ -5,8 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
 </head>
 <body>
-    
+<div class="container">
+  <div class="jumbotron">
+    <h1 id="nyt-title"></h1>
+  </div>
+  <div class="row">
+
+    <div class="panel">
+      <form method=“post”>
+
+                <label for="search-term"> Search Term</label>
+                <br>
+                <input id="search-term" type=“text”>
+                <br>
+
+                <label for="num-of-rec">Number of Records</label>
+                <br>
+                  <select>
+                    <option id='numb' value="one">1</option>
+                    <option id='numb' value="five">5</option>
+                    <option id='numb' value="ten">10</option>
+                  </select>
+                <br>
+                <br>
+
+                <label for="start-year"> Start Year (optional) </label>
+                <br>
+                <input id="start-year" type=“text”>
+                <br><br>
+
+                <label for="end-year"> End Year (optional) </label>
+                <br>
+                <input id="end-year" type=“text”>
+                <br><br>
+
+                <button id="submitbtn">Search</button>
+                <button>Clear Results</button>
+            </form>
+    </div>
+    <div class="container-panel">
+
+
+    </div>
+
+  </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
 </body>
 </html>
