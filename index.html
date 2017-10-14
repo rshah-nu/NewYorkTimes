@@ -11,78 +11,81 @@
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
+
 </head>
+
 <body>
 
-<div class="container">
+<div class="container myContainer">
 
-  <div class="jumbotron header">
-    <h1 id="nyt-title">New York Times Search</h1>
-  </div>
+    <div class="row">
 
-  <div class="row">
-
-    <div class="panel panel-primary">
-
-        <div class="panel-heading">Search Parameters
-        </div>
-
-        <div class="panel-body searchPanel">
-
-            <form method=“post”>
-
-                <label for="search-term"> Search Term</label>
-                <br>
-                <input id="search-term" type=“text”>
-                <br>
-
-                <label for="num-of-rec">Number of Records</label>
-                <br>
-                  <select>
-                    <option id='numb' value="one">1</option>
-                    <option id='numb' value="five">5</option>
-                    <option id='numb' value="ten">10</option>
-                  </select>
-                <br>
-                <br>
-
-                <label for="start-year"> Start Year (Optional): </label>
-                <br>
-                <input id="start-year" type=“text”>
-                <br><br>
-
-                <label for="end-year"> End Year (Optional): </label>
-                <br>
-                <input id="end-year" type=“text”>
-                <br><br>
-
-                <button class="btn-primary" id="submitbtn">Search</button>
-                <button class="btn-primary" >Clear Results</button>
-
-            </form>
-
+        <div class="jumbotron jumbotron-fluid header">
+            <h1 id="nyt-title">New York Times Search</h1>
         </div>
 
     </div>
 
-    <div class="panel panel-primary">
+    <div class="row">
 
-      <div class="panel-heading">Top Results
-      </div>
+        <div class="panel panel-primary">
 
-      <div class="panel-body">
-          
-      </div>
+            <div class="panel-heading">Search Parameters
+            </div>
+
+            <div class="panel-body">
+
+                <form method=“post”>
+
+                    <label for="search-term"> Search Term</label>
+                    <br>
+                    <input id="search-term" type=“text”>
+                    <br>
+
+                    <label for="num-of-rec">Number of Records</label>
+                    <br>
+                      <select>
+                        <option id='numb' value="one">1</option>
+                        <option id='numb' value="five">5</option>
+                        <option id='numb' value="ten">10</option>
+                      </select>
+                    <br>
+                    <br>
+
+                    <label for="start-year"> Start Year (Optional): </label>
+                    <br>
+                    <input id="start-year" type=“text”>
+                    <br><br>
+
+                    <label for="end-year"> End Year (Optional): </label>
+                    <br>
+                    <input id="end-year" type=“text”>
+                    <br><br>
+
+                    <button class="btn-primary button" id="submitbtn">Search</button>
+                    <button class="btn-primary button" >Clear Results</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Top Results
+          </div>
+
+          <div class="panel-body">
+              
+          </div>
+
+        </div>
 
     </div>
 
-    
-
-
-    </div>
-
-  </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/app.js"></script>
 </body>

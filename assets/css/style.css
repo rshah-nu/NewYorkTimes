@@ -1,3 +1,7 @@
+.myContainer {
+	margin: auto;
+}
+
 .header {
 	background-color: #243257;
 	color: white;
@@ -6,5 +10,16 @@
 	font-style: bold;
 }
 
-.searchPanel {
+.panel > .panel-heading {
+    background-image: none;
+    background-color: #303D4E;
+    color: white;
+}
+
+.button {
+	background-color: #98A5A6;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border: none;
+	font-style: bold;
 }
