@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search Application</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One" rel="stylesheet">
 </head>
 <body>
+
 <div class="container">
-  <div class="jumbotron">
-    <h1 id="nyt-title"></h1>
+
+  <div class="jumbotron header">
+    <h1 id="nyt-title">New York Times Search</h1>
   </div>
+
   <div class="row">
 
-    <div class="panel">
-      <form method=“post”>
+    <div class="panel panel-primary">
+
+        <div class="panel-heading">Search Parameters
+        </div>
+
+        <div class="panel-body searchPanel">
+
+            <form method=“post”>
 
                 <label for="search-term"> Search Term</label>
                 <br>
@@ -35,21 +46,37 @@
                 <br>
                 <br>
 
-                <label for="start-year"> Start Year (optional) </label>
+                <label for="start-year"> Start Year (Optional): </label>
                 <br>
                 <input id="start-year" type=“text”>
                 <br><br>
 
-                <label for="end-year"> End Year (optional) </label>
+                <label for="end-year"> End Year (Optional): </label>
                 <br>
                 <input id="end-year" type=“text”>
                 <br><br>
 
-                <button id="submitbtn">Search</button>
-                <button>Clear Results</button>
+                <button class="btn-primary" id="submitbtn">Search</button>
+                <button class="btn-primary" >Clear Results</button>
+
             </form>
+
+        </div>
+
     </div>
-    <div class="container-panel">
+
+    <div class="panel panel-primary">
+
+      <div class="panel-heading">Top Results
+      </div>
+
+      <div class="panel-body">
+          
+      </div>
+
+    </div>
+
+    
 
 
     </div>
